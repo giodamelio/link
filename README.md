@@ -1,18 +1,21 @@
 # Link
 
-To start your Phoenix server:
+A tiny file/link sharing service just for me
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+# How to use
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Set the link
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+`POST` a url to https://link.giodamelio.com/ or https://link.giodamelio.com/set
 
-## Learn more
+or
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Visit https://link.giodamelio.com/set
+
+## Get the link
+
+Visit https://link.giodamelio.com to be redirected to link
+
+or
+
+Visit https://link.giodamelio.com/see to see the text of the link
