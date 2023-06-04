@@ -15,9 +15,9 @@ defmodule Link.Application do
       # Start Finch
       {Finch, name: Link.Finch},
       # Start the Endpoint (http/https)
-      LinkWeb.Endpoint
-      # Start a worker by calling: Link.Worker.start_link(arg)
-      # {Link.Worker, arg}
+      LinkWeb.Endpoint,
+      # Keep track of the link
+      {Link.Store, name: Link.Store}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
