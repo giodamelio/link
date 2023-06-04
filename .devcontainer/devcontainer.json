@@ -4,10 +4,9 @@
     "dockerfile": "Dockerfile",
     "args": {
       // Elixir Version: 1.9, 1.10, 1.10.4, ...
-      "VARIANT": "latest"
+      "VARIANT": "1.14"
     }
   },
-
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
@@ -18,13 +17,10 @@
       ]
     }
   },
-
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [],
-
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "mix deps.get"
-
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode"
 }
