@@ -17,7 +17,8 @@ defmodule LinkWeb.Router do
   scope "/", LinkWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", PageController, :index
+    get "/see", PageController, :see
   end
 
   # Other scopes may use custom stacks.

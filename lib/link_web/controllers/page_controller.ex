@@ -1,9 +1,11 @@
 defmodule LinkWeb.PageController do
   use LinkWeb, :controller
 
-  def home(conn, _params) do
-    # The home page is often custom made,
-    # so skip the default app layout.
-    render(conn, :home, layout: false)
+  def index(conn, _params) do
+    redirect(conn, external: "https://giodamelio.com")
+  end
+
+  def see(conn, _params) do
+    text(conn, "https://giodamelio.com")
   end
 end
