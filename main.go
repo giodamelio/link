@@ -12,7 +12,7 @@ import (
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "4000"
+		port = "8080"
 	}
 
 	r := chi.NewRouter()
@@ -23,5 +23,6 @@ func main() {
 		w.Write([]byte("welcome"))
 	})
 
-	log.Fatal(http.ListenAndServe(":3000", r))
+	log.Printf("Starting server on port %s\n", port)
+	log.Fatal(http.ListenAndServe(":"+port, r))
 }
