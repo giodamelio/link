@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Link It",
+  "version": "1.0",
+  "description": "A tiny file/link sharing service just for me",
+  "permissions": [
+    "activeTab",
+    "notifications"
+  ],
+  "action": {
+    "default_title": "Link It",
+    "default_icon": {
+      "16": "icons/link-dark-16.png",
+      "32": "icons/link-dark-32.png",
+      "64": "icons/link-dark-64.png"
+    },
+    "theme_icons": [
+      {
+        "dark": "icons/link-dark-64.png",
+        "light": "icons/link-light-64.png",
+        "size": 64
+      },
+      {
+        "dark": "icons/link-dark-32.png",
+        "light": "icons/link-light-32.png",
+        "size": 32
+      },
+      {
+        "dark": "icons/link-dark-16.png",
+        "light": "icons/link-light-16.png",
+        "size": 16
+      }
+    ]
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
