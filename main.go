@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
@@ -75,7 +76,7 @@ func main() {
 		}
 
 		// Write the URL to Redis
-		err = rdb.Set(context.Background(), URL_KEY, body, 0).Err()
+		err = rdb.Set(context.Background(), URL_KEY, body, time.Minute*5).Err()
 		if err != nil {
 			w.Write([]byte("No URL is currently set"))
 			return
