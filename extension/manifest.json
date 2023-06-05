@@ -36,5 +36,10 @@
     "scripts": [
       "background.js"
     ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "link@giodamelio.com"
+    }
   }
 }
