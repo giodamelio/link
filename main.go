@@ -71,7 +71,7 @@ func main() {
 		body, err := io.ReadAll(r.Body)
 		if err != nil {
 			w.Write([]byte("Could not set URL"))
-			w.WriteHeader(400)
+			w.WriteHeader(http.StatusBadRequest)
 			return
 		}
 
